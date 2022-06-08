@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ĂN GÌ ĐÂY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/forget_password.css">
+    <link rel="stylesheet" href="./css/create_account.css">
+</head>
+
+<body>
+    <!--Forget Password-->
+    <div class="forget_password_form">
+        <form id="modalForgetPass" class="modalForgetPass">
+            <div class="modalForgetPassContent">
+                <span class="closeForgetPass">&times;</span>
+                <h2>Tìm tài khoản của bạn</h2>
+                <div class="password_form">
+                    <p>Vui lòng nhập email hoặc số di động để tìm kiếm tài khoản
+                        của bạn.
+                    </p>
+                    <input type="text" placeholder="Email hoặc số điện thoại">
+                </div>
+                <div class="find">
+                    <button id="cancle">Huỷ</button>
+                    <button id="search">Tìm kiếm</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--Forget Password-->
+    <!--Create Account-->
+    <div class="create_account_form">
+        <form id="modalCreateAccount" class="modalCreateAccount">
+            <div class="modalCreateAccountContent">
+                <span class="closeCreateAccount">&times;</span>
+                <h2>ĐĂNG KÍ</h2>
+                <div class="information-input">
+                    <label for="">Tên Đăng Nhập</label>
+                    <input type="text" id="userNameAccount" placeholder="Nhập tên đăng nhập">
+                    <label for="">Email</label>
+                    <input type="email" id="emailAccount" placeholder="Nhập Email">
+                    <label for="">Mật Khẩu</label>
+                    <input type="password" id="passNewAccount" placeholder="Mật khẩu">
+                    <label for="">Nhập lại mật khẩu</label>
+                    <input type="password" id="re-input" placeholder="Nhập lại mật khẩu">
+                </div>
+                <div class="term_Of_Service">
+                    <input type="checkbox" id="termOfServiceUser"> Tôi đồng ý <a href="#">điều khoản và dịch vụ</a>
+                </div>
+                <div class="submitAccount">
+                    <button type="submit">ĐĂNG KÍ</button>
+                </div>
+                <div class="action-relogin">
+                    Đã có tài khoản? <a href="#" id="relogin">Đăng Nhập</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--Create Account-->
+    <div id="wrapper">
+        <div id="header">
+            <a href="">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="">Trang Chủ</a>
+                </div>
+                <div class="product">
+                    <a href="">Sản Phẩm</a>
+                    <ul class="subnav">
+                        <li><a href="#"></a>Đồ Ăn Ngọt</li>
+                        <li><a href="#"></a>Đồ Ăn Mặn</li>
+                        <li><a href="#"></a>Đồ Ăn Chay</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a href="">Giới Thiệu</a>
+                </div>
+                <div class="item">
+                    <a href="">Liên Hệ</a>
+                </div>
+            </div>
+            <div id="search-page">
+                <form class="form-search">
+                    <input type="search" class="form-search" placeholder="Tìm kiếm..." />
+                    <button type="search" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <button id="userAccount">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <form id="modalLogin" class="modalLogin">
+                        <div class="modalLoginContent">
+                            <span class="closeLogin">&times;</span>
+                            <h2>ĐĂNG NHẬP</h2>
+                            <div class="information-form">
+                                <label for="">Tên Đăng Nhập</label>
+                                <input type="text" placeholder="Nhập tên đăng nhập">
+                                <label for="">Mật Khẩu</label>
+                                <input type="password" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="remember-me">
+                                <input type="checkbox" id="rememberMe"> Ghi nhớ đăng nhập
+                            </div>
+                            <div class="submitBtn">
+                                <button type="submit">ĐĂNG NHẬP</button>
+                            </div>
+                            <div class="action-more">
+                                <a href="#" id="forgetPassword">Quên Mật Khẩu?</a>
+                                <a href="#" id="createNewAccount">Tạo Tài Khoản</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="box-left">
+                <h2>
+                    <span>ĐỒ ĂN</span>
+                    <br>
+                    <span>SIÊU NGON</span>
+                </h2>
+                <br>
+                <p>
+                    Chuyên cung cấp các món ăn đảm bảo dinh dưỡng, đa dạng, tiêu chuẩn vệ sinh
+                    đến người dùng, phục vụ quý khách một cách hoàn hảo nhất
+                </p>
+                <button>Đặt Món Ngay</button>
+            </div>
+            <div class="box-right">
+                <img src="images/img_1.png" alt="">
+                <img src="images/img_2.png" alt="">
+                <img src="images/img_3.png" alt="">
+            </div>
+            <div class="to-bottom">
+                <a href="">
+                    <img src="images/to_bottom.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div id="wp-products">
+            <h2>ĂN GÌ ĐÂY</h2>
+            <ul id="list-products">
+                <div class="item">
+                    <img src="images/product_1.png" alt="">
+                    <div class="stars">
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="name">Món Ăn 1</div>
+                    <div class="desc">Đặc Trưng Của Món ĂN</div>
+                    <div class="price">500.000 VND</div>
+                </div>
+                <div class="item">
+                    <img src="images/product_2.png" alt="">
+                    <div class="stars">
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="name">Món Ăn 1</div>
+                    <div class="desc">Đặc Trưng Của Món ĂN</div>
+                    <div class="price">500.000 VND</div>
+                </div>
+                <div class="item">
+                    <img src="images/product_3.png" alt="">
+                    <div class="stars">
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="name">Món Ăn 1</div>
+                    <div class="desc">Đặc Trưng Của Món ĂN</div>
+                    <div class="price">500.000 VND</div>
+                </div>
+                <div class="item">
+                    <img src="images/product_4.png" alt="">
+                    <div class="stars">
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="name">Món Ăn 1</div>
+                    <div class="desc">Đặc Trưng Của Món ĂN</div>
+                    <div class="price">500.000 VND</div>
+                </div>
+                <div class="item">
+                    <img src="images/product_5.png" alt="">
+                    <div class="stars">
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="name">Món Ăn 1</div>
+                    <div class="desc">Đặc Trưng Của Món ĂN</div>
+                    <div class="price">500.000 VND</div>
+                </div>
+                <div class="item">
+                    <img src="images/product_6.png" alt="">
+                    <div class="stars">
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                        <span>
+                            <img src="images/star.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="name">Món Ăn 1</div>
+                    <div class="desc">Đặc Trưng Của Món ĂN</div>
+                    <div class="price">500.000 VND</div>
+                </div>
+            </ul>
+
+            <div class="list-page">
+                <div class="item">
+                    <a href="">1</a>
+                </div>
+                <div class="item">
+                    <a href="">2</a>
+                </div>
+                <div class="item">
+                    <a href="">3</a>
+                </div>
+                <div class="item">
+                    <a href="">4</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="saleoff">
+            <div class="box-left">
+                <h1>
+                    <span>GIẢM GIÁ LÊN ĐẾN</span>
+                    <span>50K</span>
+                </h1>
+            </div>
+            <div class="box-right"></div>
+        </div>
+
+        <div class="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/about-img.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="detail-box">
+                            <div class="heading">
+                                <h1>VỀ CHÚNG TÔI</h1>
+                            </div>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration
+                                in some form, by injected humour, or randomised words which don't look even slightly
+                                believable. If you
+                                are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                                embarrassing hidden in
+                                the middle of text. All
+                            </p>
+                            <a href="#">Đọc Thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="comment">
+            <h2>ĐÁNH GIÁ VÀ TRẢI NGHIỆM CỦA KHÁCH HÀNG</h2>
+            <div id="comment-body">
+                <div class="prev">
+                    <a href="#">
+                        <img src="images/prev.png" alt="">
+                    </a>
+                </div>
+                <ul id="list-comment">
+                    <li class="item">
+                        <div class="avatar">
+                            <img src="images/avatar_1.png" alt="">
+                        </div>
+
+                        <div class="stars">
+                            <span>
+                                <img src="images/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="images/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="images/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="images/star.png" alt="">
+                            </span>
+                            <span>
+                                <img src="images/star.png" alt="">
+                            </span>
+                        </div>
+
+                        <div class="name">Nguyễn Thuỳ Linh</div>
+                        <div class="text">
+                            Món ăn khá ngon, đúng với ý thích của mình, đánh giá khá tốt cho cửa hàng.
+                            Có cơ hội sẽ tiếp tục đặt lại.
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="next">
+                    <a href="#">
+                        <img src="images/next.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>THÔNG TIN LIÊN HỆ</h2>
+            <div id="information">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>
+                    3 Tôn Thất Thuyết, SkyPark Resident, Cầu Giấy, Hà Nội
+                </span>
+                <br><br>
+                <span>
+                    <i class="fa-solid fa-phone">
+                        <a href="#">+84 123 456 789</a>
+                    </i>
+                </span>
+                <br><br>
+                <span>
+                    <i class="fa-solid fa-envelope">
+                        <a href="#">email@gmail.com</a>
+                    </i>
+                </span>
+            </div>
+            <div id="subcribe">
+                <form class="form">
+                    <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                    <button type="submit" class="btn">GỬI</button>
+                </form>
+            </div>
+            <div id="contact">
+                <form class="social">
+                    <a href="https://www.facebook.com/">
+                        <i class="fa fa-facebook-official" style="font-size:35px;color:#4267B2">
+                        </i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa fa-instagram" style="font-size:35px;color:#E1306C">
+                        </i>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <i class="fa fa-youtube-square" style="font-size:35px;color:#FF0000">
+                        </i>
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <i class="fa fa-twitter" style="font-size:35px;color:#1DA1F2">
+                        </i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+    <script src="./js/forget_password.js"></script>
+    <script src="./js/create_account.js"></script>
+</body>
+
+</html>
